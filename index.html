@@ -3,54 +3,157 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Говори Легко — пять языков для жизни</title>
-  <meta name="description" content="Говори Легко: уроки, словарь, грамматика и разговорник для жизни в новой стране. Русский и украинский интерфейс." />
-  <link rel="icon" href="assets/icon.png" />
+  <title>Говори Легко — пять языков для жизни в новой стране</title>
+  <meta name="description" content="Говори Легко: уроки, словарь, грамматика и разговорник. Русский или украинский интерфейс. Английский, немецкий, испанский, итальянский и французский. Звук без интернета." />
+  <meta property="og:title" content="Говори Легко" />
+  <meta property="og:description" content="Попросить помощь, заказать кофе, объясниться у врача. Пять языков, звук уже в телефоне." />
+  <meta property="og:image" content="assets/cover.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://olgamentalmagic.github.io/govorilegko/" />
+  <link rel="canonical" href="https://olgamentalmagic.github.io/govorilegko/" />
+  <link rel="icon" type="image/png" href="assets/icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <style>
-    :root { --bg: #FFFBF5; --ink: #1A1A1A; --text: #3A322C; --muted: #5C534A; --accent: #8B2635; --deep: #6E0F1D; --gold: #D4A017; --line: #E8D4A8; --card: #FFFFFF; --soft: #F8E8E6; }
-    * { box-sizing: border-box; }
-    body { margin: 0; background: var(--bg); color: var(--text); font-family: Manrope, sans-serif; }
-    a { color: var(--accent); }
-    .wrap { width: min(920px, calc(100% - 32px)); margin: 0 auto; }
-    header { padding: 48px 0 20px; }
-    .mark { display: flex; gap: 18px; align-items: center; }
-    img { width: 84px; height: 84px; border-radius: 22px; }
-    .eyebrow { letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); font-weight: 800; font-size: 12px; margin: 0 0 6px; }
-    h1 { font-family: "Cormorant Garamond", serif; font-size: 64px; line-height: 0.9; color: var(--ink); margin: 0; }
-    .lead { font-size: 20px; line-height: 1.55; max-width: 640px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 22px 0 36px; }
-    article { background: var(--card); border: 1.5px solid var(--gold); border-radius: 16px; padding: 16px 18px; }
-    h2 { font-family: "Cormorant Garamond", serif; color: var(--deep); font-size: 36px; margin: 0 0 8px; }
-    strong { color: var(--ink); display: block; margin-bottom: 4px; }
-    footer { border-top: 1px solid var(--line); padding: 22px 0 40px; color: var(--muted); }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="wrap">
-    <div class="mark">
-      <img src="assets/icon.png" alt="Значок Говори Легко" />
-      <div>
-        <p class="eyebrow">Android и iPhone</p>
-        <h1>Говори Легко</h1>
+  <header class="hero">
+    <div class="hero__inner">
+      <p class="eyebrow">Android · iPhone · звук без интернета</p>
+      <div class="brand">
+        <img class="brand__icon" src="assets/icon.png" width="84" height="84" alt="Значок приложения Говори Легко" />
+        <div>
+          <p class="brand__small">ГОВОРИ</p>
+          <h1>Легко</h1>
+        </div>
+      </div>
+      <p class="tagline">Урок · Словарь · Разговорник</p>
+      <p class="lead">
+        Язык для жизни в новой стране, а не для галочки в приложении.
+        Попросить помощь, заказать кофе, объясниться в магазине, у врача
+        или про аренду. Интерфейс на русском или украинском. Занятия —
+        на английском, немецком, испанском, итальянском и французском.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn--gold" href="#screens">Посмотреть экраны</a>
+        <a class="btn btn--ghost" href="#about">Что внутри</a>
       </div>
     </div>
-    <p class="lead">Язык для жизни в новой стране: попросить помощь, заказать кофе, объясниться у врача или в магазине. Интерфейс на русском или украинском. Занятия — на английском, немецком, испанском, итальянском и французском.</p>
   </header>
-  <main class="wrap">
-    <h2>Что внутри</h2>
-    <div class="grid">
-      <article><strong>Разговорные уроки</strong>Слушаете фразу, собираете свою и пробуете ответить. Звук уже в приложении, интернет для урока не нужен.</article>
-      <article><strong>Словарь и грамматика</strong>Слова по темам и отдельные правила, коротко и с примерами. Прогресс каждого языка хранится отдельно.</article>
-      <article><strong>Разговорник</strong>Готовая фраза крупным текстом, чтобы показать собеседнику, и обычная или медленная озвучка.</article>
-      <article><strong>Без обязательной оплаты</strong>Уроки открыты. Реклама убирается подпиской 2 USD в месяц. Когда срок кончается, реклама возвращается.</article>
-    </div>
+  <img class="cover" src="assets/cover.png" alt="Говори Легко: Hello, Bonjour, Hola. English, Deutsch, Español, Italiano, Français." />
+
+  <main>
+    <section id="about" class="section">
+      <h2>О приложении</h2>
+      <div class="prose">
+        <p>
+          «Говори Легко» собрано для человека, которому язык нужен сегодня:
+          на кассе, в поликлинике, у арендодателя, в школе ребёнка.
+          Не лента чужих роликов и не бесконечная игра с сердцами.
+          Короткий разговор, нужные слова и фраза, которую можно показать собеседнику крупным текстом.
+        </p>
+        <p>
+          Звук уже лежит в телефоне: обычный темп и медленный, без сети.
+          Прогресс каждого языка хранится отдельно. Можно начать с той темы,
+          которая нужна именно в этот день, а не с запертого первого урока.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <h2>Что умеет</h2>
+      <ul class="features">
+        <li>
+          <strong>Разговорные уроки</strong>
+          <span>17 разделов, 82 занятия и 17 итоговых ситуаций. Слушаете, собираете фразу и пробуете ответить.</span>
+        </li>
+        <li>
+          <strong>Словарь</strong>
+          <span>1068 слов и выражений. Темы, поиск и избранное: врач, жильё, работа, магазин.</span>
+        </li>
+        <li>
+          <strong>Грамматика</strong>
+          <span>28 уроков на каждом языке. Короткое объяснение на русском или украинском и упражнения.</span>
+        </li>
+        <li>
+          <strong>Разговорник</strong>
+          <span>760 готовых фраз. Нужную можно послушать или вывести на весь экран для собеседника.</span>
+        </li>
+        <li>
+          <strong>Пять языков в одном приложении</strong>
+          <span>Английский, немецкий, испанский, итальянский, французский. Переключаются внутри, без отдельных установок.</span>
+        </li>
+        <li>
+          <strong>Реклама по желанию</strong>
+          <span>Уроки открыты. Подписка «Без рекламы» — 2 USD в месяц. Пока срок оплачен, баннера нет. Когда срок кончается, реклама возвращается.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="screens" class="section">
+      <h2>Как выглядит</h2>
+      <p class="section__hint">Экраны приложения: уроки, словарь, грамматика, разговорник</p>
+      <div class="shots" aria-label="Скриншоты">
+        <img src="assets/screen_1.png" alt="Список уроков по разделам" loading="lazy" />
+        <img src="assets/screen_2.png" alt="Словарь" loading="lazy" />
+        <img src="assets/screen_3.png" alt="Разговорный урок" loading="lazy" />
+        <img src="assets/screen_4.png" alt="Грамматика" loading="lazy" />
+        <img src="assets/screen_5.png" alt="Упражнение на сборку фразы" loading="lazy" />
+        <img src="assets/screen_6.png" alt="Разговорник" loading="lazy" />
+        <img src="assets/screen_7.png" alt="Произношение" loading="lazy" />
+        <img src="assets/screen_8.png" alt="Выбор языка обучения" loading="lazy" />
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Видео</h2>
+      <div class="video-wrap">
+        <video controls playsinline preload="metadata" poster="assets/poster.png">
+          <source src="assets/promo.mp4" type="video/mp4" />
+          Ваш браузер не воспроизводит видео.
+        </video>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Кому подойдёт</h2>
+      <div class="prose">
+        <p>
+          Тем, кто живёт или только переезжает и устал переводить каждую бытовую фразу с нуля.
+          Интерфейс понятен по-русски и по-украински. Сам язык можно сменить, когда жизнь
+          требует другой страны или другой работы.
+        </p>
+        <p>
+          Приложение бесплатное. Внизу экрана может быть баннер, межстраничная реклама
+          выходит не чаще раза в семь минут и только при переходе между разделами.
+          Карту разработчик не видит: подписка оформляется в Google Play или App Store.
+        </p>
+      </div>
+    </section>
+
+    <section id="download" class="section download">
+      <h2>Где будет приложение</h2>
+      <p class="download__text">
+        «Говори Легко» готовится для Google Play и App Store.
+        Android: <code>com.speakeasy.app</code>.
+        iPhone: <code>com.govorilegko.app</code>.
+      </p>
+      <p class="download__note">
+        Эта страница описывает приложение и не раздаёт установочные файлы.
+        Здесь нет сторонних APK, прямых загрузок и подмены магазина.
+        <a href="privacy.html">Политика конфиденциальности</a> одна и для Google, и для Apple.
+      </p>
+    </section>
   </main>
-  <footer class="wrap">
-    <a href="privacy.html">Политика конфиденциальности</a>
-    · <a href="mailto:helgajol01@gmail.com">helgajol01@gmail.com</a>
+
+  <footer class="footer">
+    <p>Говори Легко · пять языков для повседневной жизни</p>
+    <p>
+      <a href="privacy.html">Политика конфиденциальности</a>
+      ·
+      <a href="mailto:helgajol01@gmail.com">helgajol01@gmail.com</a>
+    </p>
   </footer>
 </body>
 </html>
